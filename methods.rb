@@ -42,6 +42,13 @@ end
 #
 # TODO - write monkey_trouble?
 
+def monkey_trouble?(a_smiling, b_smiling)
+	if (a_smiling && b_smiling) || (!a_smiling && !b_smiling)
+		return true
+	end
+	return false
+end
+
 
 # sum_double
 #
@@ -54,6 +61,12 @@ end
 #   * b - an integer
 #
 # TODO - write sum_double
+def sum_double(a, b)
+	if a == b
+		return 2*(a+b)
+	end
+	return a + b
+end
 
 
 
@@ -79,6 +92,7 @@ end
 #   * b - an integer
 #
 # TODO - write blackjack (tests first)
+
 
 
 # n_twice
