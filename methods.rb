@@ -93,7 +93,24 @@ end
 #
 # TODO - write blackjack (tests first)
 
+def blackjack(a, b)
+	dist_a = 21 - a
+	dist_b = 21 - b
 
+	if a >= 21 && b >= 21
+		return 0
+	end
+	
+	if dist_b < 0
+		return a 
+	end
+	
+	if dist_a > dist_b
+		return b
+	end
+	
+	return a
+end
 
 # n_twice
 #
