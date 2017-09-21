@@ -73,4 +73,21 @@ describe 'Methods' do
     end
   end
 
+  describe 'n_twice' do
+    it 'long word' do
+      n_twice("friendship", 2).must_equal("frip")
+    end
+
+    it 'string length equals integer' do
+      n_twice("hi", 2).must_equal("hihi")
+    end
+
+    it 'invalid input' do
+      n_twice("hi", 3).must_equal("hi")
+    end
+
+
+
+  end
+
 end
