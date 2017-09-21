@@ -17,8 +17,6 @@
 # ------------ 
 #   * weekday  - true only if it is a weekday
 #   * vacation - true only if the student is on vacation
-#
-# TODO - write sleep_in?
 
 def sleep_in?(weekday, vacation)
 	if !weekday || vacation
@@ -39,8 +37,7 @@ end
 # ------------
 #   * a_smiling   - true only if monkey a is smiling
 #   * b_smiling   - true only if monkey b is smiling
-#
-# TODO - write monkey_trouble?
+
 
 def monkey_trouble?(a_smiling, b_smiling)
 	if (a_smiling && b_smiling) || (!a_smiling && !b_smiling)
@@ -59,8 +56,8 @@ end
 # ------------
 #   * a - an integer
 #   * b - an integer
-#
-# TODO - write sum_double
+
+
 def sum_double(a, b)
 	if a == b
 		return 2*(a+b)
@@ -90,8 +87,6 @@ end
 # ------------
 #   * a - an integer
 #   * b - an integer
-#
-# TODO - write blackjack (tests first)
 
 def blackjack(a, b)
 	dist_a = 21 - a
@@ -130,7 +125,12 @@ end
 #   * n   - an integer
 #
 # TODO - write n_twice (tests first)
-
+def n_twice(str, n)
+	if n > str.length
+		return str
+	end
+	return str[0,2] + str[(str.length - n), str.length]
+end
 
 # close_far
 #
