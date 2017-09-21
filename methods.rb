@@ -100,11 +100,15 @@ def blackjack(a, b)
 	if a >= 21 && b >= 21
 		return 0
 	end
+
+	if dist_a < 0
+		return b
+	end
 	
 	if dist_b < 0
 		return a 
 	end
-	
+
 	if dist_a > dist_b
 		return b
 	end
