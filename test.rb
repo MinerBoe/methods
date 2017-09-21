@@ -55,4 +55,22 @@ describe 'Methods' do
 
   end
 
+  describe 'blackjack' do
+    it 'both are over 21' do
+      blackjack(22, 24).must_equal(0)
+    end
+
+    it '19 is close to 21' do
+      blackjack(19, 16).must_equal(19)
+    end
+
+    it 'equal to 21' do
+      blackjack(21, 21).must_equal(0)
+    end
+
+    it 'one over one under' do
+      blackjack(12, 25).must_equal(12)
+    end
+  end
+
 end
