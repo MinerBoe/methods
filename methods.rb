@@ -20,6 +20,13 @@
 #
 # TODO - write sleep_in?
 
+def sleep_in?(weekday, vacation)
+	if !weekday || vacation
+		return true
+	end
+	return false
+end
+
 
 # monkey_trouble?
 #
