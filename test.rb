@@ -22,7 +22,7 @@ describe 'Methods' do
     end
 
   end
-  
+
   describe 'monkey_trouble' do
 
     it 'is trouble when both monkeys are smiling' do
@@ -44,7 +44,7 @@ describe 'Methods' do
   end
 
   describe 'sum_double' do
-    
+
     it 'finds the sum' do
       sum_double(1, 2).must_equal(3)
     end
@@ -85,9 +85,24 @@ describe 'Methods' do
     it 'invalid input' do
       n_twice("hi", 3).must_equal("hi")
     end
+  end
 
-
-
+  describe 'close_far' do
+    it 'b close to a, c far' do
+      close_far(1, 2, 8).must_equal(true)
+    end
+    it 'all equal' do
+      close_far(2, 2, 2).must_equal(false)
+    end
+    it 'one close zero far' do
+      close_far(5, 6, 5.5).must_equal(false)
+    end
+    it 'zero close both far' do
+      close_far(5, 9, 10).must_equal(false)
+    end
+    it 'c close b far' do
+      close_far(5, 10, 6).must_equal(true)
+    end
   end
 
 end
